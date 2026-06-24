@@ -99,18 +99,37 @@ section{padding:100px 24px}
 
 /* CERTIFICATIONS */
 #certifications{background:var(--surface)}
-.certs-grid{display: block;
-  width: 100%;             /* Let it span the width of the card... */
-  max-width: 320px;        /* ...but never let it get larger than a standard certificate size */
-  height: auto;            /* CRITICAL: Keeps the aspect ratio perfectly natural */
-  margin: 0 auto 15px;     /* Centers it and pushes the text down */
-  border-radius: 6px;}
-.cert-card{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;transition:transform 0.2s,box-shadow 0.2s,border-color 0.2s}
+.certs-grid{display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  flex-wrap: wrap;}
+.cert-card{
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  flex: 1;
+  min-width: 290px;  /* Keeps them from shrinking too much */
+  max-width: 450px;  /* Keeps them from stretching too wide on massive screens */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
 .cert-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(201,168,76,0.15);border-color:rgba(201,168,76,0.3)}
 .cert-badge{font-size:2rem;margin-bottom:16px}
 .cert-card h3{font-size:1.05rem;font-weight:700;margin-bottom:6px;color:var(--text)}
 .cert-issuer{font-family:'JetBrains Mono',monospace;font-size:0.8rem;color:var(--accent);margin-bottom:12px}
-.cert-card img{width:100%;height:auto;border-radius:8px;margin-bottom:16px;border:1px solid var(--border)}
+.cert-card img{
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto 16px;
+  border-radius: 6px;
+}
 .cert-link{margin-top:auto;align-self:flex-start;font-size:0.85rem;color:var(--cyan);text-decoration:none;font-weight:600;display:flex;align-items:center;gap:6px;transition:color 0.2s}
 .cert-link:hover{color:var(--text)}
 
