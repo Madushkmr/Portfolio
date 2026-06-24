@@ -100,11 +100,12 @@ section{padding:100px 24px}
 /* CERTIFICATIONS */
 #certifications{background:var(--surface)}
 .certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
-.cert-card{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:28px;display:flex;flex-direction:column;justify-content:between;transition:transform 0.2s,box-shadow 0.2s,border-color 0.2s}
+.cert-card{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;transition:transform 0.2s,box-shadow 0.2s,border-color 0.2s}
 .cert-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(201,168,76,0.15);border-color:rgba(201,168,76,0.3)}
 .cert-badge{font-size:2rem;margin-bottom:16px}
 .cert-card h3{font-size:1.05rem;font-weight:700;margin-bottom:6px;color:var(--text)}
 .cert-issuer{font-family:'JetBrains Mono',monospace;font-size:0.8rem;color:var(--accent);margin-bottom:12px}
+.cert-card img{width:100%;height:auto;border-radius:8px;margin-bottom:16px;border:1px solid var(--border)}
 .cert-link{margin-top:auto;align-self:flex-start;font-size:0.85rem;color:var(--cyan);text-decoration:none;font-weight:600;display:flex;align-items:center;gap:6px;transition:color 0.2s}
 .cert-link:hover{color:var(--text)}
 
@@ -216,18 +217,18 @@ section{padding:100px 24px}
 footer{background:var(--surface);border-top:1px solid var(--border);padding:32px 24px;text-align:center;color:var(--muted);font-size:0.82rem}
 footer span{color:var(--accent)}
 
-/* FADE UP */
+/* FADE UP (ANIMATIONS) */
 .fade-up{opacity:0;transform:translateY(24px);transition:opacity 0.6s ease,transform 0.6s ease}
 .fade-up.visible{opacity:1;transform:translateY(0)}
 
-/* RESPONSIVE */
-@media(max-width:768px){
-  nav{padding:14px 20px}
-  .nav-links{display:none}
-  .about-grid{grid-template-columns:1fr}
-  section{padding:72px 20px}
+/* FALLBACK: If JavaScript is disabled, force display everything */
+@media (prefers-reduced-motion: reduce) {
+  .fade-up { opacity: 1; transform: none; }
 }
 </style>
+<noscript>
+  <style>.fade-up { opacity: 1 !important; transform: none !important; }</style>
+</noscript>
 </head>
 <body>
 
@@ -278,7 +279,7 @@ footer span{color:var(--accent)}
         <p>Currently: <strong>Senior Tableau Consultant at Concentrix</strong>, building real-time dashboards for LinkedIn.</p>
       </div>
       <div class="fade-up">
-        <img src="assets/profile.png" alt="K. Madush" class="about-photo"/>
+        <a href="https://ibb.co/KxB1XB1T" target="_blank"><img src="https://i.ibb.co/5hC76C7b/1780991855144.png" alt="1780991855144" class="about-photo" style="height: auto; object-fit: contain;"/></a>
         <div class="about-stats">
           <div class="stat-card"><div class="stat-num">7+</div><div class="stat-label">Years Experience</div></div>
           <div class="stat-card"><div class="stat-num">23%</div><div class="stat-label">Engagement Lift · Nike</div></div>
@@ -432,12 +433,14 @@ footer span{color:var(--accent)}
         <div class="cert-badge">📜</div>
         <h3>SQL Developer Associate</h3>
         <div class="cert-issuer">Fractal Analytics</div>
-        <a href="https://www.credential.net/c857a47a-4ad3-49d7-b21a-c22bed32e30c#acc.V5ZdrpGT" target="_blank" class="cert-link">Verify Credential ↗</a>
+        <img src="https://i.ibb.co/xcsgRnD/a3ba732d-59a9-41e2-b451-ce373b21f8f6.png" alt="SQL Developer Associate Certificate" border="0">
+        <a href="https://www.credential.net/c857a47a-4ad3-49d7-b21a-c22bed32e30c#acc.Lqiu3CwT" target="_blank" class="cert-link">Verify Credential ↗</a>
       </div>
       <div class="cert-card fade-up">
         <div class="cert-badge">🎓</div>
         <h3>Data Analytics / Science Certification</h3>
-        <div class="cert-issuer">Coursera</div>
+        <div class="cert-issuer">Google</div>
+        <img src="https://i.ibb.co/5x4vsJpn/CERTIFICATE-LANDING-PAGE-1-OD4-CLZJ4-PSE.jpg" alt="Coursera Data Analytics Certificate" border="0">
         <a href="https://www.coursera.org/account/accomplishments/verify/1OD4CLZJ4PSE" target="_blank" class="cert-link">Verify Credential ↗</a>
       </div>
     </div>
@@ -550,44 +553,51 @@ footer span{color:var(--accent)}
     <div class="cta-wrap">
       <div class="section-label fade-up">Contact</div>
       <h2 class="section-title fade-up">Let's Build Something with Your Data.</h2>
-      <p class="section-sub fade-up">Whether you need a Tableau overhaul, a clean data model, or someone to finally make sense of your marketing spend — I'm available for freelance projects and full-time roles.</p>
+      <p class="section-sub fade-up">Whether you need a Tableau overhaul, a clean data model, or someone to find the stories hiding in your infrastructure, drop me a message.</p>
       <div class="cta-buttons fade-up">
-        <a href="mailto:k.madush999@gmail.com" class="btn btn-primary">Email Me</a>
-        <a href="https://www.linkedin.com/in/kumar-madush-465989114/" target="_blank" class="btn btn-outline">View LinkedIn</a>
-        <a href="https://public.tableau.com/app/profile/k.madush" target="_blank" class="btn btn-cyan btn">Tableau Public</a>
+        <a href="mailto:your-email@example.com" class="btn btn-primary">Email Me Directly</a>
+        <a href="#contact" class="btn btn-outline btn-cyan">Get in Touch</a>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>Built with data in mind · <span>K. Madush</span> © 2025 · Bangalore, India</p>
+  <p>&copy; 2026 K. Madush. Built with precision and <span>Tableau</span> logic.</p>
 </footer>
 
 <script>
-// NAV scroll effect + active section
-const navbar = document.getElementById('navbar');
-const navLinks = document.querySelectorAll('.nav-links a');
-const sections = document.querySelectorAll('section[id]');
+document.addEventListener("DOMContentLoaded", function() {
+  const faders = document.querySelectorAll('.fade-up');
+  
+  const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
 
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 40);
+  const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('visible');
+      appearOnScroll.unobserve(entry.target);
+    });
+  }, appearOptions);
 
-  let cur = '';
-  sections.forEach(s => {
-    if (window.scrollY >= s.offsetTop - 100) cur = s.id;
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
   });
-  navLinks.forEach(a => {
-    a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
+
+  // Sticky Nav background logic
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
   });
 });
-
-// Fade-up IntersectionObserver
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.12 });
-
-document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 </script>
+
 </body>
 </html>
