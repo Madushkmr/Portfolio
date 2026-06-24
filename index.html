@@ -19,7 +19,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 40px;display:fl
 nav.scrolled{background:rgba(10,14,26,0.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
 .nav-logo{font-weight:800;font-size:1.1rem;letter-spacing:-0.5px;color:var(--text)}
 .nav-logo span{color:var(--accent)}
-.nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+.nav-links{display:flex;align-items:center;gap:24px;list-style:none}
 .nav-links a{color:var(--muted);text-decoration:none;font-size:0.875rem;font-weight:500;transition:color 0.2s}
 .nav-links a:hover,.nav-links a.active{color:var(--text)}
 .nav-icons{display:flex;gap:16px;align-items:center}
@@ -97,8 +97,18 @@ section{padding:100px 24px}
 .skill-tag{font-family:'JetBrains Mono',monospace;font-size:0.78rem;padding:8px 16px;border-radius:8px;background:var(--surface);border:1px solid var(--border);color:var(--muted);transition:all 0.2s}
 .skill-tag:hover{border-color:var(--accent);color:var(--accent);background:rgba(99,102,241,0.08)}
 
+/* CERTIFICATIONS */
+#certifications{background:var(--surface)}
+.certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
+.cert-card{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:28px;display:flex;flex-direction:column;justify-content:between;transition:transform 0.2s,box-shadow 0.2s,border-color 0.2s}
+.cert-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(201,168,76,0.15);border-color:rgba(201,168,76,0.3)}
+.cert-badge{font-size:2rem;margin-bottom:16px}
+.cert-card h3{font-size:1.05rem;font-weight:700;margin-bottom:6px;color:var(--text)}
+.cert-issuer{font-family:'JetBrains Mono',monospace;font-size:0.8rem;color:var(--accent);margin-bottom:12px}
+.cert-link{margin-top:auto;align-self:flex-start;font-size:0.85rem;color:var(--cyan);text-decoration:none;font-weight:600;display:flex;align-items:center;gap:6px;transition:color 0.2s}
+.cert-link:hover{color:var(--text)}
+
 /* RECOGNITION */
-#recognition{background:var(--surface)}
 .awards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
 .award-card{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:28px;transition:transform 0.2s,box-shadow 0.2s}
 .award-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(99,102,241,0.2)}
@@ -221,7 +231,6 @@ footer span{color:var(--accent)}
 </head>
 <body>
 
-<!-- NAV -->
 <nav id="navbar">
   <div class="nav-logo">K.<span>Madush</span></div>
   <ul class="nav-links">
@@ -230,6 +239,7 @@ footer span{color:var(--accent)}
     <li><a href="#services">Services</a></li>
     <li><a href="#domains">Domains</a></li>
     <li><a href="#skills">Stack</a></li>
+    <li><a href="#certifications">Certificates</a></li>
     <li><a href="#recommendations">Recommendations</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -243,7 +253,6 @@ footer span{color:var(--accent)}
   </div>
 </nav>
 
-<!-- HERO -->
 <section id="hero">
   <div class="hero-bg"></div>
   <div class="hero-content fade-up">
@@ -258,7 +267,6 @@ footer span{color:var(--accent)}
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
   <div class="container">
     <div class="about-grid">
@@ -282,7 +290,6 @@ footer span{color:var(--accent)}
   </div>
 </section>
 
-<!-- SERVICES -->
 <section id="services">
   <div class="container">
     <div class="section-label fade-up">Services</div>
@@ -307,7 +314,6 @@ footer span{color:var(--accent)}
   </div>
 </section>
 
-<!-- PORTFOLIO -->
 <section id="work">
   <div class="container">
     <div class="section-label fade-up">Portfolio</div>
@@ -342,7 +348,6 @@ footer span{color:var(--accent)}
   </div>
 </section>
 
-<!-- DOMAINS -->
 <section id="domains">
   <div class="container">
     <div class="section-label fade-up">Industries</div>
@@ -403,7 +408,6 @@ footer span{color:var(--accent)}
   </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
   <div class="container">
     <div class="section-label fade-up">Tech Stack</div>
@@ -419,7 +423,27 @@ footer span{color:var(--accent)}
   </div>
 </section>
 
-<!-- RECOGNITION -->
+<section id="certifications">
+  <div class="container">
+    <div class="section-label fade-up">Credentials</div>
+    <h2 class="section-title fade-up">Certifications</h2>
+    <div class="certs-grid">
+      <div class="cert-card fade-up">
+        <div class="cert-badge">📜</div>
+        <h3>SQL Developer Associate</h3>
+        <div class="cert-issuer">Fractal Analytics</div>
+        <a href="https://www.credential.net/c857a47a-4ad3-49d7-b21a-c22bed32e30c#acc.V5ZdrpGT" target="_blank" class="cert-link">Verify Credential ↗</a>
+      </div>
+      <div class="cert-card fade-up">
+        <div class="cert-badge">🎓</div>
+        <h3>Data Analytics / Science Certification</h3>
+        <div class="cert-issuer">Coursera</div>
+        <a href="https://www.coursera.org/account/accomplishments/verify/1OD4CLZJ4PSE" target="_blank" class="cert-link">Verify Credential ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="recognition">
   <div class="container">
     <div class="section-label fade-up">Recognition</div>
@@ -447,7 +471,6 @@ footer span{color:var(--accent)}
   </div>
 </section>
 
-<!-- RECOMMENDATIONS -->
 <section id="recommendations">
   <div class="container">
     <div class="section-label fade-up">Recommendations</div>
@@ -455,7 +478,6 @@ footer span{color:var(--accent)}
     <p class="section-sub fade-up">Direct feedback from managers, clients, and teammates at Nike, Converse, and Direct Line Group.</p>
     
     <div class="recommendations-grid">
-      <!-- Sean Watson -->
       <div class="rec-card fade-up">
         <div class="rec-quote-icon">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 1-2 2v1a2 2 0 0 0 2 2h.5A2.5 2.5 0 0 0 23 15.5V11a2 2 0 0 0-2-2h-3V5a2 2 0 0 0-2-2zM4 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 1-2 2v1a2 2 0 0 0 2 2h.5A2.5 2.5 0 0 0 11 15.5V11a2 2 0 0 0-2-2H6V5a2 2 0 0 0-2-2z"/></svg>
@@ -472,7 +494,6 @@ footer span{color:var(--accent)}
         <p class="rec-text">"I worked with Madush during a Qlik to Tableau migration at Directline Group. He was a great asset to the team, and his calm and concise demeanour makes everyone around him feel confident of a solution to any problem or opportunity. Would recommend Madush for your next data project."</p>
       </div>
 
-      <!-- Dan Trainer -->
       <div class="rec-card fade-up">
         <div class="rec-quote-icon">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 1-2 2v1a2 2 0 0 0 2 2h.5A2.5 2.5 0 0 0 23 15.5V11a2 2 0 0 0-2-2h-3V5a2 2 0 0 0-2-2zM4 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 1-2 2v1a2 2 0 0 0 2 2h.5A2.5 2.5 0 0 0 11 15.5V11a2 2 0 0 0-2-2H6V5a2 2 0 0 0-2-2z"/></svg>
@@ -489,7 +510,6 @@ footer span{color:var(--accent)}
         <p class="rec-text">"I had the pleasure of working with Madush when our team was implementing a Tableau reporting suite, and his expertise made all the difference. He not only brought deep technical knowledge but also a keen ability to translate complex data into clear, actionable insights.<br><br>Madush took the time to understand our unique reporting needs and built intuitive dashboards that streamlined our decision-making process. Beyond the technical work, his collaborative approach and willingness to share knowledge helped upskill our team and ensure a smooth transition to the new reporting suite.<br><br>If you’re looking for someone who combines technical excellence with a problem-solving mindset and strong teamwork, I highly recommend Madush. He would be a valuable asset to any organization."</p>
       </div>
 
-      <!-- Bill Fusco -->
       <div class="rec-card fade-up">
         <div class="rec-quote-icon">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 1-2 2v1a2 2 0 0 0 2 2h.5A2.5 2.5 0 0 0 23 15.5V11a2 2 0 0 0-2-2h-3V5a2 2 0 0 0-2-2zM4 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 1-2 2v1a2 2 0 0 0 2 2h.5A2.5 2.5 0 0 0 11 15.5V11a2 2 0 0 0-2-2H6V5a2 2 0 0 0-2-2z"/></svg>
@@ -506,7 +526,6 @@ footer span{color:var(--accent)}
         <p class="rec-text">"I was privileged to have Madush working on my team at Converse while he was with Mu Sigma. He stood out as particularly dedicated and pro-active in providing ideas and solutions while working through a variety of complex projects, utilizing advanced skills in Tableau, SQL, Snowflake, and Python. With these skills he was able to work in collaboration across teams in an end-to-end capacity and with a clear idea of how it was going to get done, a key to success for our team."</p>
       </div>
 
-      <!-- Yujie Zong -->
       <div class="rec-card fade-up">
         <div class="rec-quote-icon">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 1-2 2v1a2 2 0 0 0 2 2h.5A2.5 2.5 0 0 0 23 15.5V11a2 2 0 0 0-2-2h-3V5a2 2 0 0 0-2-2zM4 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 1-2 2v1a2 2 0 0 0 2 2h.5A2.5 2.5 0 0 0 11 15.5V11a2 2 0 0 0-2-2H6V5a2 2 0 0 0-2-2z"/></svg>
@@ -526,7 +545,6 @@ footer span{color:var(--accent)}
   </div>
 </section>
 
-<!-- CTA -->
 <section id="contact">
   <div class="container">
     <div class="cta-wrap">
@@ -542,7 +560,6 @@ footer span{color:var(--accent)}
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <p>Built with data in mind · <span>K. Madush</span> © 2025 · Bangalore, India</p>
 </footer>
