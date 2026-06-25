@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>K. Madush · Senior Data Analyst</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<title>K. Madush · Senior BI Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght=400;500;600;700;800&family=JetBrains+Mono:wght=400;500&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -251,7 +251,7 @@ footer span{color:var(--accent)}
     padding: 12px 16px;
     flex-direction: column;
     align-items: stretch;
-    gap: 12px;
+    gap: 10px;
   }
   
   .nav-header-row {
@@ -262,24 +262,19 @@ footer span{color:var(--accent)}
 
   .nav-links { 
     display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    gap: 16px;
-    padding-bottom: 4px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Hides default scrollbar layout on Firefox */
-  }
-  
-  .nav-links::-webkit-scrollbar {
-    display: none; /* Hides default scrollbar layout on Chrome/Safari */
+    flex-wrap: wrap; /* Allows links to wrap to the next line naturally */
+    justify-content: center;
+    gap: 8px 14px; /* Balanced grid styling space between links */
+    padding: 4px 0;
   }
 
   .nav-links a {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     padding: 2px 4px;
+    display: inline-block;
   }
   
-  #hero { padding: 140px 16px 60px; }
+  #hero { padding: 165px 16px 60px; } /* Pushes down hero content to clear the wrapped nav menu stack */
   section { padding: 60px 16px; }
   
   .about-grid { 
@@ -314,7 +309,7 @@ footer span{color:var(--accent)}
         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
       </a>
       <a href="https://www.linkedin.com/in/kumar-madush-465989114/" target="_blank" title="LinkedIn" aria-label="LinkedIn">
-        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 11 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
       </a>
     </div>
   </div>
@@ -335,8 +330,8 @@ footer span{color:var(--accent)}
   <div class="hero-content fade-up">
     <div class="hero-badge">Available for freelance &amp; full-time roles</div>
     <h1>I Turn Messy Data Into <span>Decisions That Move the Needle.</span></h1>
-    <p class="hero-sub">Senior Data Analyst · Tableau Specialist · 7+ Years · Nike · Lam Research · LinkedIn</p>
-    <p class="hero-body">I build analytics stacks — Snowflake pipelines, executive dashboards, marketing mix models — that give teams the clarity to act fast and spend smart.</p>
+    <p class="hero-sub">Senior BI Engineer · Tableau Specialist · 7+ Years[cite: 1] · Nike[cite: 1] · Lam Research[cite: 1] · LinkedIn</p>
+    <p class="hero-body">I build analytics stacks — Snowflake pipelines, executive dashboards, marketing mix models — that give teams the clarity to act fast and spend smart[cite: 1].</p>
     <div class="btn-group">
       <a href="#work" class="btn btn-primary">See My Work ↓</a>
       <a href="#contact" class="btn btn-outline">Let's Connect</a>
@@ -349,18 +344,18 @@ footer span{color:var(--accent)}
     <div class="about-grid">
       <div class="about-text fade-up">
         <div class="section-label">About</div>
-        <h2 class="section-title">The Analyst Who Bridges Data Complexity and Business Clarity</h2>
-        <p>I'm Madush — a data analyst who's spent <strong>7+ years embedded in Fortune 500 analytics teams</strong> at companies like Nike, Converse, Direct Line Group, and Lam Research. My weapon of choice is Tableau, but my real skill is knowing what questions to ask before I touch the data.</p>
-        <p>I've driven a <strong>23% engagement lift at Nike</strong>, built a <strong>68%-accurate marketing mix model</strong> from scratch, and led the full Qlik-to-Tableau migration of <strong>50+ dashboards</strong> at Direct Line Group. I'm equally comfortable whiteboarding with engineers and presenting to the C-suite.</p>
-        <p>Currently: <strong>Senior Tableau Consultant at Concentrix</strong>, building real-time dashboards for LinkedIn.</p>
+        <h2 class="section-title">The Analyst Who Bridges Data Complexity and Business Clarity[cite: 1]</h2>
+        <p>I'm Madush — a BI engineer who's spent <strong>7+ years embedded in Fortune 500 analytics teams</strong>[cite: 1] at companies like Nike, Converse, Direct Line Group, and Lam Research[cite: 1]. My weapon of choice is Tableau, but my real skill is knowing what questions to ask before I touch the data[cite: 1].</p>
+        <p>I've driven a <strong>23% engagement lift at Nike</strong>[cite: 1], built a <strong>68%-accurate marketing mix model</strong> from scratch[cite: 1], and led the full Qlik-to-Tableau migration of <strong>50+ dashboards</strong> at Direct Line Group[cite: 1]. I'm equally comfortable whiteboarding with engineers and presenting to the C-suite[cite: 1].</p>
+        <p>Currently: <strong>Senior Tableau Consultant at Concentrix</strong>, building real-time dashboards for LinkedIn[cite: 1].</p>
       </div>
       <div class="fade-up">
         <a href="https://ibb.co/KxB1XB1T" target="_blank"><img src="https://i.ibb.co/5hC76C7b/1780991855144.png" alt="1780991855144" class="about-photo" style="height: auto; object-fit: contain;"/></a>
         <div class="about-stats">
-          <div class="stat-card"><div class="stat-num">7+</div><div class="stat-label">Years Experience</div></div>
-          <div class="stat-card"><div class="stat-num">23%</div><div class="stat-label">Engagement Lift · Nike</div></div>
-          <div class="stat-card"><div class="stat-num">68%</div><div class="stat-label">MMM Accuracy</div></div>
-          <div class="stat-card"><div class="stat-num">50+</div><div class="stat-label">Dashboards Migrated</div></div>
+          <div class="stat-card"><div class="stat-num">7+</div><div class="stat-label">Years Experience[cite: 1]</div></div>
+          <div class="stat-card"><div class="stat-num">23%</div><div class="stat-label">Engagement Lift · Nike[cite: 1]</div></div>
+          <div class="stat-card"><div class="stat-num">68%</div><div class="stat-label">MMM Accuracy[cite: 1]</div></div>
+          <div class="stat-card"><div class="stat-num">50+</div><div class="stat-label">Dashboards Migrated[cite: 1]</div></div>
         </div>
       </div>
     </div>
@@ -370,22 +365,22 @@ footer span{color:var(--accent)}
 <section id="services">
   <div class="container">
     <div class="section-label fade-up">Services</div>
-    <h2 class="section-title fade-up">What I Bring to Your Team</h2>
+    <h2 class="section-title fade-up">What I Bring to Your Team[cite: 1]</h2>
     <div class="cards-grid">
       <div class="card fade-up">
         <div class="card-icon">📊</div>
-        <h3>Tableau Dashboard Engineering</h3>
-        <p>From data model to polished UI — I design executive-grade Tableau dashboards using LODs, parameters, and multi-source joins. My dashboards don't just report; they drive action.</p>
+        <h3>Tableau Dashboard Engineering[cite: 1]</h3>
+        <p>From data model to polished UI — I design executive-grade Tableau dashboards using LODs, parameters, and multi-source joins[cite: 1]. My dashboards don't just report; they drive action[cite: 1].</p>
       </div>
       <div class="card fade-up">
         <div class="card-icon">🔧</div>
-        <h3>Data Pipeline &amp; Modelling</h3>
-        <p>I architect clean data foundations using Snowflake, BigQuery, dbt, and SQL. CTEs, window functions, API integrations — I wire the backend so your analytics actually work.</p>
+        <h3>Data Pipeline &amp; Modelling[cite: 1]</h3>
+        <p>I architect clean data foundations using Snowflake, BigQuery, dbt, and SQL[cite: 1]. CTEs, window functions, API integrations — I wire the backend so your analytics actually work[cite: 1].</p>
       </div>
       <div class="card fade-up">
         <div class="card-icon">📈</div>
-        <h3>Marketing Analytics &amp; MMM</h3>
-        <p>I've built regression-based Marketing Mix Models, ROAS dashboards, and spend optimization tools for Nike's media team. I help you understand what's working and what's burning budget.</p>
+        <h3>Marketing Analytics &amp; MMM[cite: 1]</h3>
+        <p>I've built regression-based Marketing Mix Models, ROAS dashboards, and spend optimization tools for Nike's media team[cite: 1]. I help you understand what's working and what's burning budget[cite: 1].</p>
       </div>
     </div>
   </div>
@@ -393,33 +388,33 @@ footer span{color:var(--accent)}
 
 <section id="work">
   <div class="container">
-    <div class="section-label fade-up">Portfolio</div>
-    <h2 class="section-title fade-up">Selected Work</h2>
-    <p class="section-sub fade-up">Real dashboards. Real impact. Real numbers.</p>
+    <div class="section-label fade-up">Portfolio[cite: 1]</div>
+    <h2 class="section-title fade-up">Selected Work[cite: 1]</h2>
+    <p class="section-sub fade-up">Real dashboards. Real impact. Real numbers.[cite: 1]</p>
     <div class="project-grid">
       <div class="project-card fade-up">
-        <span class="project-tag">+23% consumer engagement</span>
-        <h3>Community Dashboard</h3>
-        <div class="project-company">Nike Inc.</div>
-        <p>Built the full data model and Tableau framework tracking pre-purchase email/SMS signals. Became the go-to tool for Nike's digital marketing team.</p>
+        <span class="project-tag">+23% consumer engagement[cite: 1]</span>
+        <h3>Community Dashboard[cite: 1]</h3>
+        <div class="project-company">Nike Inc.[cite: 1]</div>
+        <p>Built the full data model and Tableau framework tracking pre-purchase email/SMS signals[cite: 1]. Became the go-to tool for Nike's digital marketing team[cite: 1].</p>
       </div>
       <div class="project-card fade-up">
-        <span class="project-tag">68% model accuracy</span>
-        <h3>Marketing Mix Model</h3>
-        <div class="project-company">Nike Inc.</div>
-        <p>Regression-based MMM quantifying per-channel revenue contribution. The first data-backed budget allocation tool Nike's media planners had.</p>
+        <span class="project-tag">68% model accuracy[cite: 1]</span>
+        <h3>Marketing Mix Model[cite: 1]</h3>
+        <div class="project-company">Nike Inc.[cite: 1]</div>
+        <p>Regression-based MMM quantifying per-channel revenue contribution[cite: 1]. The first data-backed budget allocation tool Nike's media planners had[cite: 1].</p>
       </div>
       <div class="project-card fade-up">
-        <span class="project-tag">50+ dashboards migrated</span>
-        <h3>Qlik → Tableau Migration</h3>
-        <div class="project-company">Direct Line Group</div>
-        <p>Led the full migration lifecycle — architecture design, rebuilds, workshops, UAT — delivered on time with zero post-launch rework.</p>
+        <span class="project-tag">50+ dashboards migrated[cite: 1]</span>
+        <h3>Qlik → Tableau Migration[cite: 1]</h3>
+        <div class="project-company">Direct Line Group[cite: 1]</div>
+        <p>Led the full migration lifecycle — architecture design, rebuilds, workshops, UAT — delivered on time with zero post-launch rework[cite: 1].</p>
       </div>
       <div class="project-card fade-up">
-        <span class="project-tag">40% faster reporting</span>
-        <h3>APA Agency Dashboard</h3>
-        <div class="project-company">LinkedIn</div>
-        <p>Real-time dashboard tracking 27 agencies, cutting weekly reporting time by 40% and reducing credit utilization wastage by 20%.</p>
+        <span class="project-tag">40% faster reporting[cite: 1]</span>
+        <h3>APA Agency Dashboard[cite: 1]</h3>
+        <div class="project-company">LinkedIn[cite: 1]</div>
+        <p>Real-time dashboard tracking 27 agencies, cutting weekly reporting time by 40% and reducing credit utilization wastage by 20%[cite: 1].</p>
       </div>
     </div>
   </div>
@@ -427,59 +422,59 @@ footer span{color:var(--accent)}
 
 <section id="domains">
   <div class="container">
-    <div class="section-label fade-up">Industries</div>
-    <h2 class="section-title fade-up">Domain Expertise</h2>
-    <p class="section-sub fade-up">7+ years across diverse industries — from Fortune 500 consumer brands to deep-tech semiconductor firms.</p>
+    <div class="section-label fade-up">Industries[cite: 1]</div>
+    <h2 class="section-title fade-up">Domain Expertise[cite: 1]</h2>
+    <p class="section-sub fade-up">7+ years across diverse industries — from Fortune 500 consumer brands to deep-tech semiconductor firms[cite: 1].</p>
     <div class="domains-grid fade-up">
       <div class="domain-card">
         <div class="domain-icon">👟</div>
-        <h3>Retail & E-Commerce</h3>
-        <p>Consumer analytics, purchase funnel tracking, and digital engagement models for global retail brands like Nike and Converse.</p>
+        <h3>Retail & E-Commerce[cite: 1]</h3>
+        <p>Consumer analytics, purchase funnel tracking, and digital engagement models for global retail brands like Nike and Converse[cite: 1].</p>
       </div>
       <div class="domain-card">
         <div class="domain-icon">🏪</div>
-        <h3>Brick & Mortar Stores</h3>
-        <p>In-store performance dashboards, footfall analysis, and inventory-linked sales reporting for physical retail operations.</p>
+        <h3>Brick & Mortar Stores[cite: 1]</h3>
+        <p>In-store performance dashboards, footfall analysis, and inventory-linked sales reporting for physical retail operations[cite: 1].</p>
       </div>
       <div class="domain-card">
         <div class="domain-icon">🤝</div>
-        <h3>CRM & Customer Analytics</h3>
-        <p>Email/SMS signal tracking, customer segmentation, lifecycle dashboards, and pre-purchase behaviour modelling.</p>
+        <h3>CRM & Customer Analytics[cite: 1]</h3>
+        <p>Email/SMS signal tracking, customer segmentation, lifecycle dashboards, and pre-purchase behaviour modelling[cite: 1].</p>
       </div>
       <div class="domain-card">
         <div class="domain-icon">🏦</div>
-        <h3>Fintech</h3>
-        <p>Financial metrics dashboards, transaction data pipelines, and spend analytics for data-driven financial products.</p>
+        <h3>Fintech[cite: 1]</h3>
+        <p>Financial metrics dashboards, transaction data pipelines, and spend analytics for data-driven financial products[cite: 1].</p>
       </div>
       <div class="domain-card">
         <div class="domain-icon">🛡️</div>
-        <h3>Insurance</h3>
-        <p>End-to-end BI migration, claims analytics, and executive reporting at Direct Line Group — one of the UK's largest insurers.</p>
+        <h3>Insurance[cite: 1]</h3>
+        <p>End-to-end BI migration, claims analytics, and executive reporting at Direct Line Group — one of the UK's largest insurers[cite: 1].</p>
       </div>
       <div class="domain-card">
         <div class="domain-icon">💼</div>
-        <h3>Hiring & Talent</h3>
-        <p>Agency performance dashboards, recruiter analytics, and pipeline reporting tools for enterprise hiring platforms.</p>
+        <h3>Hiring & Talent[cite: 1]</h3>
+        <p>Agency performance dashboards, recruiter analytics, and pipeline reporting tools for enterprise hiring platforms[cite: 1].</p>
       </div>
       <div class="domain-card">
         <div class="domain-icon">🏢</div>
-        <h3>Enterprise SaaS</h3>
-        <p>Real-time operational dashboards, credit utilisation tracking, and multi-tenant reporting for large-scale SaaS platforms like LinkedIn.</p>
+        <h3>Enterprise SaaS[cite: 1]</h3>
+        <p>Real-time operational dashboards, credit utilisation tracking, and multi-tenant reporting for large-scale SaaS platforms like LinkedIn[cite: 1].</p>
       </div>
       <div class="domain-card">
         <div class="domain-icon">🔬</div>
-        <h3>Semiconductor</h3>
-        <p>Product development analytics, yield data pipelines, and decision-support models for high-precision manufacturing at Lam Research.</p>
+        <h3>Semiconductor[cite: 1]</h3>
+        <p>Product development analytics, yield data pipelines, and decision-support models for high-precision manufacturing at Lam Research[cite: 1].</p>
       </div>
       <div class="domain-card">
         <div class="domain-icon">📣</div>
-        <h3>Media & Marketing</h3>
-        <p>Marketing Mix Modelling, ROAS dashboards, multi-channel attribution, and media budget optimisation for global brand teams.</p>
+        <h3>Media & Marketing[cite: 1]</h3>
+        <p>Marketing Mix Modelling, ROAS dashboards, multi-channel attribution, and media budget optimisation for global brand teams[cite: 1].</p>
       </div>
       <div class="domain-card">
         <div class="domain-icon">📦</div>
-        <h3>Supply Chain & Ops</h3>
-        <p>Operational KPI tracking, logistics performance dashboards, and data pipelines supporting supply chain decision-making.</p>
+        <h3>Supply Chain & Ops[cite: 1]</h3>
+        <p>Operational KPI tracking, logistics performance dashboards, and data pipelines supporting supply chain decision-making[cite: 1].</p>
       </div>
     </div>
   </div>
@@ -487,8 +482,8 @@ footer span{color:var(--accent)}
 
 <section id="skills">
   <div class="container">
-    <div class="section-label fade-up">Tech Stack</div>
-    <h2 class="section-title fade-up">My Stack</h2>
+    <div class="section-label fade-up">Tech Stack[cite: 1]</div>
+    <h2 class="section-title fade-up">My Stack[cite: 1]</h2>
     <div class="skills-wrap fade-up">
       <div class="skills-row">
         <span class="skill-tag">Tableau</span><span class="skill-tag">Snowflake</span><span class="skill-tag">SQL</span><span class="skill-tag">Python</span><span class="skill-tag">dbt</span><span class="skill-tag">BigQuery</span><span class="skill-tag">Power BI</span><span class="skill-tag">AWS SageMaker</span>
@@ -502,22 +497,22 @@ footer span{color:var(--accent)}
 
 <section id="certifications">
   <div class="container">
-    <div class="section-label fade-up">Credentials</div>
-    <h2 class="section-title fade-up">Certifications</h2>
+    <div class="section-label fade-up">Credentials[cite: 1]</div>
+    <h2 class="section-title fade-up">Certifications[cite: 1]</h2>
     <div class="certs-grid">
       <div class="cert-card fade-up">
         <div class="cert-badge">📜</div>
-        <h3>SQL Developer Associate</h3>
-        <div class="cert-issuer">Fractal Analytics</div>
+        <h3>SQL Developer Associate[cite: 1]</h3>
+        <div class="cert-issuer">Fractal Analytics[cite: 1]</div>
         <img src="https://i.ibb.co/xcsgRnD/a3ba732d-59a9-41e2-b451-ce373b21f8f6.png" alt="SQL Developer Associate Certificate" border="0">
-        <a href="https://www.credential.net/c857a47a-4ad3-49d7-b21a-c22bed32e30c#acc.Lqiu3CwT" target="_blank" class="cert-link">Verify Credential ↗</a>
+        <a href="https://www.credential.net/c857a47a-4ad3-49d7-b21a-c22bed32e30c#acc.Lqiu3CwT" target="_blank" class="cert-link">Verify Credential ↗[cite: 1]</a>
       </div>
       <div class="cert-card fade-up">
         <div class="cert-badge">🎓</div>
-        <h3>Data Analytics / Science Certification</h3>
-        <div class="cert-issuer">Google</div>
+        <h3>Data Analytics / Science Certification[cite: 1]</h3>
+        <div class="cert-issuer">Google[cite: 1]</div>
         <img src="https://i.ibb.co/XZ1GpX3R/Screenshot-2026-06-25-at-1-39-29-AM.png" alt="Screenshot-2026-06-25-at-1-39-29-AM" border="0">
-        <a href="https://www.coursera.org/account/accomplishments/verify/1OD4CLZJ4PSE" target="_blank" class="cert-link">Verify Credential ↗</a>
+        <a href="https://www.coursera.org/account/accomplishments/verify/1OD4CLZJ4PSE" target="_blank" class="cert-link">Verify Credential ↗[cite: 1]</a>
       </div>
     </div>
   </div>
@@ -525,26 +520,26 @@ footer span{color:var(--accent)}
 
 <section id="recognition">
   <div class="container">
-    <div class="section-label fade-up">Recognition</div>
-    <h2 class="section-title fade-up">Awards &amp; Achievements</h2>
+    <div class="section-label fade-up">Recognition[cite: 1]</div>
+    <h2 class="section-title fade-up">Awards &amp; Achievements[cite: 1]</h2>
     <div class="awards-grid">
       <div class="award-card fade-up">
         <div class="award-icon">🏆</div>
-        <h3>Spot Award · Mu Sigma Inc.</h3>
-        <div class="award-year">2023</div>
-        <p>Recognized for outstanding impact on Nike's analytics capability.</p>
+        <h3>Spot Award · Mu Sigma Inc.[cite: 1]</h3>
+        <div class="award-year">2023[cite: 1]</div>
+        <p>Recognized for outstanding impact on Nike's analytics capability[cite: 1].</p>
       </div>
       <div class="award-card fade-up">
         <div class="award-icon">⭐</div>
-        <h3>Top Performer · Lam Research</h3>
-        <div class="award-year">2021</div>
-        <p>Awarded for accelerating product development decisions through data pipelines and analytical modelling.</p>
+        <h3>Top Performer · Lam Research[cite: 1]</h3>
+        <div class="award-year">2021[cite: 1]</div>
+        <p>Awarded for accelerating product development decisions through data pipelines and analytical modelling[cite: 1].</p>
       </div>
       <div class="award-card fade-up">
         <div class="award-icon">🌏</div>
-        <h3>LIMCA Record Holder · Aorta Foundation</h3>
-        <div class="award-year">2018</div>
-        <p>Part of a world-record-setting volunteer design initiative.</p>
+        <h3>LIMCA Record Holder · Aorta Foundation[cite: 1]</h3>
+        <div class="award-year">2018[cite: 1]</div>
+        <p>Part of a world-record-setting volunteer design initiative[cite: 1].</p>
       </div>
     </div>
   </div>
@@ -552,9 +547,9 @@ footer span{color:var(--accent)}
 
 <section id="recommendations">
   <div class="container">
-    <div class="section-label fade-up">Recommendations</div>
-    <h2 class="section-title fade-up">What Colleagues Say</h2>
-    <p class="section-sub fade-up">Direct feedback from managers, clients, and teammates at Nike, Converse, and Direct Line Group.</p>
+    <div class="section-label fade-up">Recommendations[cite: 1]</div>
+    <h2 class="section-title fade-up">What Colleagues Say[cite: 1]</h2>
+    <p class="section-sub fade-up">Direct feedback from managers, clients, and teammates at Nike, Converse, and Direct Line Group.[cite: 1]</p>
     
     <div class="recommendations-grid">
       <div class="rec-card fade-up">
@@ -562,15 +557,15 @@ footer span{color:var(--accent)}
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 1-2 2v1a2 2 0 0 0 2 2h.5A2.5 2.5 0 0 0 23 15.5V11a2 2 0 0 0-2-2h-3V5a2 2 0 0 0-2-2zM4 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 1-2 2v1a2 2 0 0 0 2 2h.5A2.5 2.5 0 0 0 11 15.5V11a2 2 0 0 0-2-2H6V5a2 2 0 0 0-2-2z"/></svg>
         </div>
         <div class="rec-header">
-          <div class="rec-avatar">SW</div>
+          <div class="rec-avatar">SW[cite: 1]</div>
           <div class="rec-author-info">
-            <h3>Sean Watson</h3>
-            <div class="rec-role">Head of Data and Governance</div>
-            <div class="rec-meta">Direct Line Group · Feb 2025</div>
+            <h3>Sean Watson[cite: 1]</h3>
+            <div class="rec-role">Head of Data and Governance[cite: 1]</div>
+            <div class="rec-meta">Direct Line Group · Feb 2025[cite: 1]</div>
           </div>
         </div>
-        <div class="rec-relationship">Worked with Kumar on the same team during Qlik to Tableau migration</div>
-        <p class="rec-text">"I worked with Madush during a Qlik to Tableau migration at Directline Group. He was a great asset to the team, and his calm and concise demeanour makes everyone around him feel confident of a solution to any problem or opportunity. Would recommend Madush for your next data project."</p>
+        <div class="rec-relationship">Worked with Kumar on the same team during Qlik to Tableau migration[cite: 1]</div>
+        <p class="rec-text">"I worked with Madush during a Qlik to Tableau migration at Directline Group[cite: 1]. He was a great asset to the team, and his calm and concise demeanour makes everyone around him feel confident of a solution to any problem or opportunity[cite: 1]. Would recommend Madush for your next data project[cite: 1]."</p>
       </div>
 
       <div class="rec-card fade-up">
@@ -578,15 +573,15 @@ footer span{color:var(--accent)}
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 1-2 2v1a2 2 0 0 0 2 2h.5A2.5 2.5 0 0 0 23 15.5V11a2 2 0 0 0-2-2h-3V5a2 2 0 0 0-2-2zM4 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 1-2 2v1a2 2 0 0 0 2 2h.5A2.5 2.5 0 0 0 11 15.5V11a2 2 0 0 0-2-2H6V5a2 2 0 0 0-2-2z"/></svg>
         </div>
         <div class="rec-header">
-          <div class="rec-avatar">DT</div>
+          <div class="rec-avatar">DT[cite: 1]</div>
           <div class="rec-author-info">
-            <h3>Dan Trainer</h3>
-            <div class="rec-role">Data Analyst / Engineer</div>
-            <div class="rec-meta">Direct Line Group · Feb 2025</div>
+            <h3>Dan Trainer[cite: 1]</h3>
+            <div class="rec-role">Data Analyst / Engineer[cite: 1]</div>
+            <div class="rec-meta">Direct Line Group · Feb 2025[cite: 1]</div>
           </div>
         </div>
-        <div class="rec-relationship">Worked with Kumar on the same team implementing Tableau reporting suite</div>
-        <p class="rec-text">"I had the pleasure of working with Madush when our team was implementing a Tableau reporting suite, and his expertise made all the difference. He not only brought deep technical knowledge but also a keen ability to translate complex data into clear, actionable insights.<br><br>Madush took the time to understand our unique reporting needs and built intuitive dashboards that streamlined our decision-making process. Beyond the technical work, his collaborative approach and willingness to share knowledge helped upskill our team and ensure a smooth transition to the new reporting suite.<br><br>If you’re looking for someone who combines technical excellence with a problem-solving mindset and strong teamwork, I highly recommend Madush. He would be a valuable asset to any organization."</p>
+        <div class="rec-relationship">Worked with Kumar on the same team implementing Tableau reporting suite[cite: 1]</div>
+        <p class="rec-text">"I had the pleasure of working with Madush when our team was implementing a Tableau reporting suite, and his expertise made all the difference[cite: 1]. He not only brought deep technical knowledge but also a keen ability to translate complex data into clear, actionable insights[cite: 1].<br><br>Madush took the time to understand our unique reporting needs and built intuitive dashboards that streamlined our decision-making process[cite: 1]. Beyond the technical work, his collaborative approach and willingness to share knowledge helped upskill our team and ensure a smooth transition to the new reporting suite[cite: 1].<br><br>If you’re looking for someone who combines technical excellence with a problem-solving mindset and strong teamwork, I highly recommend Madush[cite: 1]. He would be a valuable asset to any organization[cite: 1]."</p>
       </div>
 
       <div class="rec-card fade-up">
@@ -594,15 +589,15 @@ footer span{color:var(--accent)}
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 1-2 2v1a2 2 0 0 0 2 2h.5A2.5 2.5 0 0 0 23 15.5V11a2 2 0 0 0-2-2h-3V5a2 2 0 0 0-2-2zM4 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 1-2 2v1a2 2 0 0 0 2 2h.5A2.5 2.5 0 0 0 11 15.5V11a2 2 0 0 0-2-2H6V5a2 2 0 0 0-2-2z"/></svg>
         </div>
         <div class="rec-header">
-          <div class="rec-avatar">BF</div>
+          <div class="rec-avatar">BF[cite: 1]</div>
           <div class="rec-author-info">
-            <h3>Bill Fusco</h3>
-            <div class="rec-role">Senior Manager</div>
-            <div class="rec-meta">Converse · Feb 2024</div>
+            <h3>Bill Fusco[cite: 1]</h3>
+            <div class="rec-role">Senior Manager[cite: 1]</div>
+            <div class="rec-meta">Converse · Feb 2024[cite: 1]</div>
           </div>
         </div>
-        <div class="rec-relationship">Managed Kumar directly at Converse</div>
-        <p class="rec-text">"I was privileged to have Madush working on my team at Converse while he was with Mu Sigma. He stood out as particularly dedicated and pro-active in providing ideas and solutions while working through a variety of complex projects, utilizing advanced skills in Tableau, SQL, Snowflake, and Python. With these skills he was able to work in collaboration across teams in an end-to-end capacity and with a clear idea of how it was going to get done, a key to success for our team."</p>
+        <div class="rec-relationship">Managed Kumar directly at Converse[cite: 1]</div>
+        <p class="rec-text">"I was privileged to have Madush working on my team at Converse while he was with Mu Sigma[cite: 1]. He stood out as particularly dedicated and pro-active in providing ideas and solutions while working through a variety of complex projects, utilizing advanced skills in Tableau, SQL, Snowflake, and Python[cite: 1]. With these skills he was able to work in collaboration across teams in an end-to-end capacity and with a clear idea of how it was going to get done, a key to success for our team[cite: 1]."</p>
       </div>
 
       <div class="rec-card fade-up">
@@ -610,15 +605,15 @@ footer span{color:var(--accent)}
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 1-2 2v1a2 2 0 0 0 2 2h.5A2.5 2.5 0 0 0 23 15.5V11a2 2 0 0 0-2-2h-3V5a2 2 0 0 0-2-2zM4 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h4a2 2 0 0 1-2 2v1a2 2 0 0 0 2 2h.5A2.5 2.5 0 0 0 11 15.5V11a2 2 0 0 0-2-2H6V5a2 2 0 0 0-2-2z"/></svg>
         </div>
         <div class="rec-header">
-          <div class="rec-avatar">YZ</div>
+          <div class="rec-avatar">YZ[cite: 1]</div>
           <div class="rec-author-info">
-            <h3>Yujie Zong</h3>
-            <div class="rec-role">Lead, Data & Analytics Insights</div>
-            <div class="rec-meta">Converse · Feb 2024</div>
+            <h3>Yujie Zong[cite: 1]</h3>
+            <div class="rec-role">Lead, Data & Analytics Insights[cite: 1]</div>
+            <div class="rec-meta">Converse · Feb 2024[cite: 1]</div>
           </div>
         </div>
-        <div class="rec-relationship">Kumar's Client at Converse</div>
-        <p class="rec-text">"I worked with Madush while at Converse Inc. Madush was the go-to person for multiple analyses and dashboard building. He applied hands-on skills in SQL, Python, and Tableau, created/maintained customer dashboards, monitored email performance, and addressed data quality issues. Madush was a nice team member and delivered great value to our Consumer Direct Sciences team."</p>
+        <div class="rec-relationship">Kumar's Client at Converse[cite: 1]</div>
+        <p class="rec-text">"I worked with Madush while at Converse Inc[cite: 1]. Madush was the go-to person for multiple analyses and dashboard building[cite: 1]. He applied hands-on skills in SQL, Python, and Tableau, created/maintained customer dashboards, monitored email performance, and addressed data quality issues[cite: 1]. Madush was a nice team member and delivered great value to our Consumer Direct Sciences team[cite: 1]."</p>
       </div>
     </div>
   </div>
